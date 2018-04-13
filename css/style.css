@@ -24,6 +24,20 @@ body {
     body {
       padding: 0; } }
 
+h3 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  position: relative; }
+  h3::before {
+    content: "";
+    width: 5rem;
+    height: .8rem;
+    background-color: #ffdd5c;
+    display: block;
+    position: absolute;
+    top: 2.4rem;
+    left: -3.5rem; }
+
 .container {
   width: 90%;
   margin: 0 auto; }
@@ -96,19 +110,43 @@ nav {
     margin-left: 8rem;
     max-width: 40%; }
     .section-feature .feature__content h3 {
-      font-size: 5rem;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-      position: relative; }
-      .section-feature .feature__content h3::before {
-        content: "";
-        width: 5rem;
-        height: .8rem;
-        background-color: #ffdd5c;
-        display: block;
-        position: absolute;
-        top: 2.4rem;
-        left: -3.5rem; }
+      margin-bottom: 1rem; }
     .section-feature .feature__content p {
       font-size: 1.6rem;
       line-height: 1.5; }
+
+.section-signature {
+  height: auto;
+  background-image: linear-gradient(to right, white 0%, white 40%, transparent 40%), url("../image/signature.jpg");
+  background-size: cover;
+  background-position: center; }
+  .section-signature h3 {
+    margin-bottom: 5rem;
+    margin-left: 3.5rem; }
+  .section-signature .signature__box {
+    display: flex; }
+    .section-signature .signature__box .signature__card {
+      width: 30rem;
+      height: auto;
+      background-color: #fcfcfc;
+      margin-right: 1.5rem;
+      border-radius: .3rem;
+      overflow: hidden;
+      box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); }
+      .section-signature .signature__box .signature__card img {
+        width: 30rem;
+        filter: saturate(180%);
+        display: block;
+        margin-left: -3rem;
+        margin-bottom: 4rem; }
+      .section-signature .signature__box .signature__card .card__content {
+        background-color: white;
+        padding: 2rem 2rem; }
+        .section-signature .signature__box .signature__card .card__content h4 {
+          font-size: 2rem;
+          text-transform: uppercase;
+          margin-bottom: .5rem; }
+        .section-signature .signature__box .signature__card .card__content p {
+          font-size: 1.4rem;
+          line-height: 1.2;
+          color: #666; }

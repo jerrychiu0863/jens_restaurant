@@ -1,0 +1,52 @@
+.section-signature {
+    height: auto; 
+    background-image: linear-gradient(to right, $col-wh 0%, $col-wh 40%, transparent 40%), url("../image/signature.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    & h3 {
+        margin-bottom: 5rem;
+        margin-left: 3.5rem;
+    }
+    
+    & .signature__box {
+        display: flex;
+        
+        & .signature__card {
+            width: 30rem;
+            height: auto;
+            background-color: #fcfcfc;
+            margin-right: 1.5rem;
+            border-radius: .3rem;
+            overflow: hidden;
+            box-shadow: 0 0 2rem rgba(0,0,0,.1);
+            
+            & img {
+                width: 30rem;
+                filter: saturate(180%);
+                display: block;
+                margin-left: -3rem;
+                margin-bottom: 4rem;
+            }
+            
+            & .card__content {
+                background-color: $col-wh;
+                padding: 2rem 2rem;
+                
+                & h4 {
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    margin-bottom: .5rem;
+                    
+                }
+                
+                & p {
+                    font-size: 1.4rem;
+                    line-height: 1.2;
+                    color: $col-font;
+                }
+            }
+            
+        }
+    }
+}

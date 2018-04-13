@@ -1,0 +1,16 @@
+h3 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    position: relative;
+    
+    &::before {
+        content: "";
+        width: 5rem;
+        height: .8rem;
+        background-color: $col-gold-1;
+        display: block;
+        position: absolute;
+        top: 2.4rem;
+        left: -3.5rem;
+    }
+}

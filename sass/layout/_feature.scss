@@ -24,22 +24,7 @@
         margin-left: 8rem;
         max-width: 40%;
         & h3 {
-            font-size: 5rem;
-            text-transform: uppercase;
             margin-bottom: 1rem;
-            position: relative;
-            
-            &::before {
-                content: "";
-                width: 5rem;
-                height: .8rem;
-                background-color: $col-gold-1;
-                display: block;
-                position: absolute;
-                top: 2.4rem;
-                left: -3.5rem;
-                
-            }
         }
         
         & p {
