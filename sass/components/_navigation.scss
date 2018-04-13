@@ -1,0 +1,68 @@
+nav {
+    background-color: lightgray;
+    height: 4rem;
+    
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+            
+        li {
+            font-size: 2rem;
+            display: inline-block;
+            line-height: 4rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
+    
+.section-header {
+    height: 100vh;
+    background-image: linear-gradient(to right, $col-main 0%, $col-main 40%, transparent 40%), url("../image/hero_image.jpg");
+    background-size: cover;
+    color: white;
+    position: relative;
+        
+    & .header__main {
+        margin-left: 20rem;
+        margin-top: 20rem;
+        display: inline-block;
+        
+        & h1 {
+            font-size: 20rem;
+            text-transform: uppercase;
+            letter-spacing: 4rem;
+        }
+        
+        & h2 {
+            font-size: 10rem;
+            text-transform: uppercase;
+            font-weight: 100;
+            letter-spacing: 1rem;
+        }
+    }
+    
+    & .header__sub {
+        max-width: 20%;
+        transform: rotate(90deg);
+        display: inline-block;
+        position: absolute;
+        left: -9.3rem;
+        top: 34rem;
+        padding: 0 0 0 5rem;
+        border-left: 1rem solid white;
+        
+        & h4 {
+          text-transform: uppercase;
+          font-size: 2rem;
+          letter-spacing: 2px;
+          margin-bottom: 1rem;
+        }
+        
+        & p {
+            line-height: 1.5;
+        }
+    }
+    
+}
