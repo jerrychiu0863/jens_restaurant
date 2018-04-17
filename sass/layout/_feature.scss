@@ -30,6 +30,29 @@
         & p {
             font-size: 1.6rem;
             line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+        
+        & .feature__list {
+            list-style: none;
+            display: flex;
+            
+            &-item {
+                font-size: 2rem;
+                text-transform: uppercase;
+                margin-right: 2rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+                
+                &::before {
+                    content: "■";
+                    color: darkorange;
+                    font-size: 2rem;
+                    margin-right: .5rem;
+                    display: inline-block;
+                    transform: translateY(-2px);
+                }
+            }
         }
     }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -113,10 +114,27 @@ nav {
       margin-bottom: 1rem; }
     .section-feature .feature__content p {
       font-size: 1.6rem;
-      line-height: 1.5; }
+      line-height: 1.5;
+      margin-bottom: 2rem; }
+    .section-feature .feature__content .feature__list {
+      list-style: none;
+      display: flex; }
+      .section-feature .feature__content .feature__list-item {
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-right: 2rem;
+        font-weight: 500;
+        letter-spacing: 1px; }
+        .section-feature .feature__content .feature__list-item::before {
+          content: "■";
+          color: darkorange;
+          font-size: 2rem;
+          margin-right: .5rem;
+          display: inline-block;
+          transform: translateY(-2px); }
 
 .section-signature {
-  height: auto;
+  height: 38rem;
   background-image: linear-gradient(to right, white 0%, white 40%, transparent 40%), url("../image/signature.jpg");
   background-size: cover;
   background-position: center; }
@@ -150,3 +168,47 @@ nav {
           font-size: 1.4rem;
           line-height: 1.2;
           color: #666; }
+        .section-signature .signature__box .signature__card .card__content .card__price {
+          display: inline-block;
+          font-size: 2rem;
+          margin-right: 5rem;
+          color: indianred; }
+        .section-signature .signature__box .signature__card .card__content .card__icon {
+          width: 2rem;
+          height: 2rem;
+          margin-top: 1rem;
+          fill: #ffdd5c;
+          transform: translateY(4px); }
+
+.section-hours {
+  height: 50rem;
+  margin-top: 20rem;
+  overflow: hidden;
+  position: relative; }
+  .section-hours h3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block; }
+  .section-hours .hours__form {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%); }
+    .section-hours .hours__form tr td {
+      font-size: 4rem;
+      padding: 1rem 2rem; }
+  .section-hours img {
+    display: block;
+    max-width: 70%;
+    transform: translate(80%, 20%); }
+
+.footer {
+  height: auto;
+  text-align: center;
+  padding-top: 2rem; }
+  .footer p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #666; }

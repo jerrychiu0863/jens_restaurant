@@ -1,5 +1,5 @@
 .section-signature {
-    height: auto; 
+    height: 38rem; 
     background-image: linear-gradient(to right, $col-wh 0%, $col-wh 40%, transparent 40%), url("../image/signature.jpg");
     background-size: cover;
     background-position: center;
@@ -45,8 +45,71 @@
                     line-height: 1.2;
                     color: $col-font;
                 }
+                
+                & .card__price {
+                    display: inline-block;
+                    font-size: 2rem;
+                    margin-right: 5rem;
+                    color: indianred;
+                }
+                
+                & .card__icon {
+                    width: 2rem;
+                    height: 2rem;
+                    margin-top: 1rem;
+                    fill: $col-gold-1;
+                    transform: translateY(4px);
+                }
             }
             
         }
     }
+}
+
+.section-hours {
+    height: 50rem;
+    margin-top: 20rem;
+    overflow: hidden;
+    position: relative;
+    
+    & h3 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;    
+    }
+    
+    & .hours__form {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        & tr {
+                        
+            & td {
+                font-size: 4rem;
+                padding: 1rem 2rem;
+            }
+        }
+    }
+    
+    & img {
+        display: block;
+        max-width: 70%;
+        transform: translate(80%, 20%);
+    }
+}
+
+.footer {
+    height: auto;
+    text-align: center;
+    padding-top: 2rem;
+        
+        & p {
+           font-size: 1rem; 
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: $col-font;
+        }
 }
