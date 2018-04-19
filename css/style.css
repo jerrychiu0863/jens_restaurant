@@ -20,7 +20,8 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem; }
+  padding: 3rem;
+  font-family: 'Roboto', sans-serif; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -28,7 +29,8 @@ body {
 h3 {
   font-size: 5rem;
   text-transform: uppercase;
-  position: relative; }
+  position: relative;
+  letter-spacing: 2px; }
   h3::before {
     content: "";
     width: 5rem;
@@ -44,18 +46,20 @@ h3 {
   margin: 0 auto; }
 
 nav {
-  background-color: lightgray;
   height: 4rem; }
   nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around; }
     nav ul li {
-      font-size: 2rem;
+      font-size: 3rem;
       display: inline-block;
       line-height: 4rem;
       text-transform: uppercase;
-      cursor: pointer; }
+      cursor: pointer;
+      color: rgba(64, 75, 105, 0.8); }
+      nav ul li:hover {
+        color: #283149; }
 
 .section-header {
   height: 100vh;
@@ -75,13 +79,13 @@ nav {
       font-size: 10rem;
       text-transform: uppercase;
       font-weight: 100;
-      letter-spacing: 1rem; }
+      letter-spacing: .6rem; }
   .section-header .header__sub {
     max-width: 20%;
     transform: rotate(90deg);
     display: inline-block;
     position: absolute;
-    left: -9.3rem;
+    left: -8.5rem;
     top: 34rem;
     padding: 0 0 0 5rem;
     border-left: 1rem solid white; }
@@ -115,7 +119,8 @@ nav {
     .section-feature .feature__content p {
       font-size: 1.6rem;
       line-height: 1.5;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      color: #666; }
     .section-feature .feature__content .feature__list {
       list-style: none;
       display: flex; }
@@ -123,15 +128,14 @@ nav {
         font-size: 2rem;
         text-transform: uppercase;
         margin-right: 2rem;
-        font-weight: 500;
-        letter-spacing: 1px; }
+        font-weight: 500; }
         .section-feature .feature__content .feature__list-item::before {
           content: "■";
           color: darkorange;
           font-size: 2rem;
           margin-right: .5rem;
           display: inline-block;
-          transform: translateY(-2px); }
+          transform: translateY(-2.8px); }
 
 .section-signature {
   height: 38rem;
@@ -178,7 +182,13 @@ nav {
           height: 2rem;
           margin-top: 1rem;
           fill: #ffdd5c;
-          transform: translateY(4px); }
+          transform: translateY(4px);
+          display: inline-flex; }
+          .section-signature .signature__box .signature__card .card__content .card__icon .fa-star {
+            font-size: 2rem;
+            color: #ffdd5c; }
+            .section-signature .signature__box .signature__card .card__content .card__icon .fa-star:not(:last-child) {
+              margin-right: 2px; }
 
 .section-hours {
   height: 50rem;

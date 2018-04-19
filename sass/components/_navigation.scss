@@ -1,6 +1,5 @@
 nav {
-    background-color: lightgray;
-    height: 4rem;
+        height: 4rem;
     
     ul {
         list-style: none;
@@ -8,11 +7,16 @@ nav {
         justify-content: space-around;
             
         li {
-            font-size: 2rem;
+            font-size: 3rem;
             display: inline-block;
             line-height: 4rem;
             text-transform: uppercase;
             cursor: pointer;
+            color: rgba($col-sub, .8);;
+            
+            &:hover {
+                color: $col-main;
+            }
         }
     }
 }
@@ -39,7 +43,7 @@ nav {
             font-size: 10rem;
             text-transform: uppercase;
             font-weight: 100;
-            letter-spacing: 1rem;
+            letter-spacing: .6rem;
         }
     }
     
@@ -48,7 +52,7 @@ nav {
         transform: rotate(90deg);
         display: inline-block;
         position: absolute;
-        left: -9.3rem;
+        left: -8.5rem;
         top: 34rem;
         padding: 0 0 0 5rem;
         border-left: 1rem solid white;
