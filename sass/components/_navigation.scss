@@ -12,10 +12,10 @@ nav {
             line-height: 4rem;
             text-transform: uppercase;
             cursor: pointer;
-            color: rgba($col-sub, .8);;
+            color: rgba($col-gold-1, .8);
             
             &:hover {
-                color: $col-main;
+                color: $col-gold-1;
             }
         }
     }

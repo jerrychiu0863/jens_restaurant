@@ -57,9 +57,9 @@ nav {
       line-height: 4rem;
       text-transform: uppercase;
       cursor: pointer;
-      color: rgba(64, 75, 105, 0.8); }
+      color: rgba(255, 221, 92, 0.8); }
       nav ul li:hover {
-        color: #283149; }
+        color: #ffdd5c; }
 
 .section-header {
   height: 100vh;
@@ -155,6 +155,20 @@ nav {
       border-radius: .3rem;
       overflow: hidden;
       box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); }
+      .section-signature .signature__box .signature__card-1 {
+        transform: translateX(-20px);
+        opacity: 0;
+        transition: all .8s;
+        transition-delay: .4s; }
+      .section-signature .signature__box .signature__card-2 {
+        transform: translateX(-20px);
+        opacity: 0;
+        transition: all .8s;
+        transition-delay: .2s; }
+      .section-signature .signature__box .signature__card-3 {
+        transform: translateX(-20px);
+        opacity: 0;
+        transition: all .8s; }
       .section-signature .signature__box .signature__card img {
         width: 30rem;
         filter: saturate(180%);
