@@ -16,8 +16,9 @@
             <div class="container">
                 <ul>
                     <a href="#"><li>Home</li></a>
-                    <a href="#"><li>Menu</li></a>
-                    <a href="#"><li>About</li></a>
+                    <a href="#feature"><li>Feature</li></a>
+                    <a href="#signature"><li>Signature</li></a>
+                    <a href="#menu"><li>Menu</li></a>
                     <a href="#"><li>Contact</li></a>
                 </ul>
             </div>
@@ -33,7 +34,7 @@
             </div>
         </header>
         
-        <section class="section-feature">
+        <section class="section-feature" id="feature">
             <div class="feature__box">
                 <img src="image/mussel.png"> 
             </div>
@@ -48,7 +49,7 @@
             </div>
         </section>
         
-        <section class="section-signature">
+        <section class="section-signature" id="signature">
             <div class="container">
                 <h3>Signature</h3>
             
@@ -106,38 +107,175 @@
             </div>
         </section>
         
-        <section class="section-menu">
+        <section class="section-menu" id="menu">
             <h3>Menu</h3>
             
             <div class="container">
                 <div id="myBtnContainer">
                   <button class="btn active" onclick="filterSelection('all')"> All</button>
-                  <button class="btn" onclick="filterSelection('pasta')"> pasta</button>
-                  <button class="btn" onclick="filterSelection('pizza')"> pizza</button>
-                  <button class="btn" onclick="filterSelection('soup')"> soup</button>
-                  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+                  <button class="btn" onclick="filterSelection('apperizer')"> apperizer</button>
+                  <button class="btn" onclick="filterSelection('soupSalad')">Soup &amp; Salad</button>
+                  <button class="btn" onclick="filterSelection('pasta')">Psta</button>
+                  <button class="btn" onclick="filterSelection('cocktail')"> Cocktail</button>
                 </div>
             </div>
             
             <div class="container">
-              <div class="menu__card pasta">
+              <div class="menu__card apperizer">
                 <div class="menu__card-image">
-                    <img src="image/pasta.jpg" alt="pasta">
+                    <img src="image/baked_clam_200x200_apperizer.jpg" alt="Baked Clam Casino">
                 </div>
                 <div class="menu__card-content">
-                    <h4>Pasta</h4>
+                    <h4>Baked Clam Casino</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
               </div>
-              <div class="menu__card colors fruits">Orange</div>
-              <div class="menu__card cars">Volvo</div>
-              <div class="menu__card pizza">Red</div>
-              <div class="menu__card cars pizza">Mustang</div>
-              <div class="menu__card cars soup">soup</div>
-              <div class="menu__card cars pizza">Mustang</div>
-              <div class="menu__card cars animals">Mustang</div>
-              <div class="menu__card cars soup">soup</div>
+              <div class="menu__card apperizer">
+                  <div class="menu__card-image">
+                    <img src="image/mussels_fra_diavolo_200x200_apperizer.jpg" alt="Mussels Fra Diavolo">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Mussels Fra Diavolo</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+              <div class="menu__card apperizer">
+                  <div class="menu__card-image">
+                    <img src="image/grilled_broccoli_rabe_200x200_apperizer.jpg" alt="Grilled Broccoli">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Grilled Broccoli Rabe</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+              <div class="menu__card apperizer">
+                <div class="menu__card-image">
+                    <img src="image/cripsy_oxtail_arancini_200x200_apperizer.jpg" alt="Oxtail Arancini">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Cripsy Oxtail Arancini</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+              <div class="menu__card soupSalad">
+                <div class="menu__card-image">
+                    <img src="image/creamy_mushroom_soup_200x200_soup.jpg" alt="Mushroom Soup">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Creamy Mushroom Soup</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+              <div class="menu__card soupSalad">
+                <div class="menu__card-image">
+                    <img src="image/hearty_italian_soup_200x200_soup.jpg" alt="Wedding Soup">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Italian Wedding Soup</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+              <div class="menu__card soupSalad">
+                <div class="menu__card-image">
+                    <img src="image/csear_salad_200x200_salad.jpg" alt="Csear Salad">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Csear Salad</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+              <div class="menu__card soupSalad">
+                <div class="menu__card-image">
+                    <img src="image/house_salad_200x200_salad.jpg" alt="House Salad">
+                </div>
+                <div class="menu__card-content">
+                    <h4>House Salad</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+            <div class="menu__card cars pasta">
+                <div class="menu__card-image">
+                    <img src="image/fettucini_alfredo_200x200_pasta.jpg" alt="Fettucini Alfredo">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Fettucini Alfredo</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
             </div>
+            <div class="menu__card cars pasta">
+                <div class="menu__card-image">
+                    <img src="image/calamarata_with_shellfish_puttanesca_200x200_pasta.jpg" alt="Calamarata With Shellfish Puttanesca">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Calamarata With Shellfish Puttanesca</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="menu__card cars pasta">
+                <div class="menu__card-image">
+                    <img src="image/lamb_ragu_200x200_pasta.jpg" alt="Rigatoni And Lamb Ragu">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Rigatoni And Lamb Ragu</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="menu__card cars pasta">
+                <div class="menu__card-image">
+                    <img src="image/lasagna_alla_norma_200x200_pasta.jpg" alt="Lasagna Alla Norma">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Lasagna Alla Norma</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="menu__card cars pasta">
+                <div class="menu__card-image">
+                    <img src="image/pappardelle_bolognese_200x200_pasta.jpg" alt="Pappardelle Bolognese">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Pappardelle Bolognese</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="menu__card cars cocktail">
+                <div class="menu__card-image">
+                    <img src="image/gibson_200x200_cocktail.jpg" alt="Gibson">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Gibson</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="menu__card cars cocktail">
+                <div class="menu__card-image">
+                    <img src="image/manhattan_200x200_cocktail.jpg" alt="Manhattan">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Manhattan</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="menu__card cars cocktail">
+                <div class="menu__card-image">
+                    <img src="image/moscow_mule_200x200_cocktail.jpg" alt="MMoscow Mule">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Moscow Mule</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="menu__card cars cocktail">
+                <div class="menu__card-image">
+                    <img src="image/old_fashioned_200x200_cocktail.jpg" alt="Old Fashioned">
+                </div>
+                <div class="menu__card-content">
+                    <h4>Old Fashioned</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            </div>
+            
         </section>
         
         <section class="section-hours">
