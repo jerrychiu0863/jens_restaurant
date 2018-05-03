@@ -152,6 +152,7 @@ nav {
       height: auto;
       background-color: #fcfcfc;
       margin-right: 1.5rem;
+      margin-bottom: 2rem;
       border-radius: .3rem;
       overflow: hidden;
       box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); }
@@ -203,6 +204,66 @@ nav {
             color: #ffdd5c; }
             .section-signature .signature__box .signature__card .card__content .card__icon .fa-star:not(:last-child) {
               margin-right: 2px; }
+
+.section-menu {
+  height: auto;
+  padding-top: 30rem;
+  text-align: center; }
+  .section-menu h3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block; }
+
+.menu__card {
+  float: left;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  color: #666;
+  width: 15%;
+  height: 28rem;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 3px;
+  display: none; }
+  .menu__card-image img {
+    width: 100%; }
+  .menu__card-content {
+    padding: 1rem; }
+    .menu__card-content h4 {
+      font-size: 2rem;
+      margin-bottom: .5rem;
+      color: #283149; }
+
+.show {
+  display: block; }
+
+.container {
+  margin-top: 20px;
+  overflow: hidden; }
+
+/* Style the buttons */
+#myBtnContainer {
+  margin-top: 8rem; }
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  background-color: #283149;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 2px; }
+  .btn:not(:last-child) {
+    margin-right: 1rem; }
+  .btn:hover {
+    background-color: #283149; }
+  .btn.active {
+    background-color: #ffdd5c;
+    color: #283149; }
 
 .section-hours {
   height: 50rem;
