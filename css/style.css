@@ -60,20 +60,24 @@ nav {
       line-height: 4rem;
       text-transform: uppercase;
       cursor: pointer;
-      color: rgba(255, 221, 92, 0.8);
-      transition: all .1s; }
+      color: #ffdd5c;
+      transition: color .38s; }
       nav ul li::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
+        z-index: -1;
         width: 3px;
         height: 100%;
-        background-color: #283149;
+        background-color: #ffdd5c;
         transform: scaleY(0);
-        transition: all .2s; }
+        transition: transform .4s, width .2s .4s; }
       nav ul li:hover::before {
-        transform: scaleY(1); }
+        transform: scaleY(1);
+        width: 100%; }
+      nav ul li:hover {
+        color: #283149; }
 
 .section-header {
   height: 100vh;
