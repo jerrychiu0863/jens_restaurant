@@ -63,6 +63,16 @@ nav {
         margin-top: 20rem;
         display: inline-block;
         
+        @include respond(tab-land) {
+            margin-left: 19.5rem;
+            margin-top: 15rem;
+        }
+        
+        @include respond(tab-port) {
+            margin-left: 14.4rem;
+            margin-top: 15rem;
+        }
+        
         & h1 {
             font-size: 20rem;
             text-transform: uppercase;
@@ -82,10 +92,24 @@ nav {
         transform: rotate(90deg);
         display: inline-block;
         position: absolute;
-        left: -8.5rem;
-        top: 34rem;
+        left: -11.4rem;
+        top: 36.7rem;
         padding: 0 0 0 5rem;
-        border-left: 1rem solid white;
+        border-left: 1rem solid #fff;
+        
+        @include respond(tab-land) {
+            max-width: 25rem;
+            left: -8.7rem;
+            top: 28.5rem;
+        }
+        
+        @include respond(tab-port) {
+            max-width: 25rem;
+            left: -9.5rem;
+            top: 29rem;
+            padding: 0 0 0 3rem;
+            border-left: .8rem solid #fff;
+        }
         
         & h4 {
           text-transform: uppercase;
