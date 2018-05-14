@@ -141,7 +141,7 @@ nav {
   overflow: hidden; }
   @media only screen and (max-width: 56.25em) {
     .section-feature {
-      height: 90vh; } }
+      height: 85vh; } }
   .section-feature .feature__box {
     width: 40%;
     height: 40rem;
@@ -283,6 +283,12 @@ nav {
   margin: 1rem;
   border-radius: 3px;
   display: none; }
+  @media only screen and (max-width: 75em) {
+    .menu__card {
+      width: 18%; } }
+  @media only screen and (max-width: 56.25em) {
+    .menu__card {
+      width: 18%; } }
   .menu__card-image img {
     width: 100%; }
   .menu__card-content {
@@ -327,6 +333,13 @@ nav {
   margin-top: 20rem;
   overflow: hidden;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .section-hours {
+      margin-top: 10rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-hours {
+      height: 30rem;
+      margin-top: 5rem; } }
   .section-hours h3 {
     position: absolute;
     left: 50%;
@@ -340,10 +353,20 @@ nav {
     .section-hours .hours__form tr td {
       font-size: 4rem;
       padding: 1rem 2rem; }
+      @media only screen and (max-width: 75em) {
+        .section-hours .hours__form tr td {
+          font-size: 3rem; } }
   .section-hours img {
     display: block;
     max-width: 70%;
     transform: translate(80%, 20%); }
+    @media only screen and (max-width: 75em) {
+      .section-hours img {
+        max-width: 50%;
+        transform: translate(130%, 30%); } }
+    @media only screen and (max-width: 56.25em) {
+      .section-hours img {
+        display: none; } }
 
 .footer {
   height: auto;

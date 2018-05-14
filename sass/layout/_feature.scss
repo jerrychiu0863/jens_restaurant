@@ -4,7 +4,7 @@
     overflow: hidden;
     
     @include respond(tab-port) {
-        height: 90vh;
+        height: 85vh;
     }
     
     & .feature__box {
