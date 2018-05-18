@@ -372,6 +372,9 @@ nav {
   margin-top: 10rem;
   height: auto;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .section-find {
+      margin-top: -8rem; } }
   .section-find h3 {
     margin-top: 2rem;
     position: absolute;

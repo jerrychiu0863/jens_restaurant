@@ -210,6 +210,7 @@
     
     @include respond(tab-land) {
         margin-top: 10rem;
+        
     }
     
     @include respond(tab-port) {
@@ -264,6 +265,10 @@
     margin-top: 10rem;
     height: auto;
     position: relative;
+    
+     @include respond(tab-land) {
+        margin-top: -8rem;
+    }
     
     & h3 {
         margin-top: 2rem;
