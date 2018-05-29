@@ -11,6 +11,9 @@
         width: 40%;
         height: 40rem;
         z-index: 2;
+        transform: translateX(-5rem);
+        opacity: 0;
+        transition: all linear .5s;
         //background-color: $col-sub;
         
         img {
@@ -37,6 +40,9 @@
         margin-top: 25rem;
         margin-left: 8rem;
         max-width: 40%;
+        transform: translateX(5rem);
+        opacity: 0;
+        transition: all linear .5s;
         
         @include respond(tab-land) {
             margin-top: 22rem;
@@ -44,7 +50,7 @@
         }
         
         @include respond(tab-port) {
-            margin-top: 20rem;
+            margin-top: 18rem;
             margin-left: 8rem;
         }
         

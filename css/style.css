@@ -51,6 +51,9 @@ nav {
     list-style: none;
     display: flex;
     justify-content: space-around; }
+    @media only screen and (max-width: 56.25em) {
+      nav ul {
+        justify-content: space-between; } }
     nav ul li {
       position: relative;
       font-size: 3rem;
@@ -62,6 +65,9 @@ nav {
       cursor: pointer;
       color: #ffdd5c;
       transition: color .38s; }
+      @media only screen and (max-width: 56.25em) {
+        nav ul li {
+          font-size: 2.5rem; } }
       nav ul li::before {
         content: "";
         position: absolute;
@@ -145,7 +151,10 @@ nav {
   .section-feature .feature__box {
     width: 40%;
     height: 40rem;
-    z-index: 2; }
+    z-index: 2;
+    transform: translateX(-5rem);
+    opacity: 0;
+    transition: all linear .5s; }
     .section-feature .feature__box img {
       height: 80rem;
       display: block;
@@ -162,14 +171,17 @@ nav {
   .section-feature .feature__content {
     margin-top: 25rem;
     margin-left: 8rem;
-    max-width: 40%; }
+    max-width: 40%;
+    transform: translateX(5rem);
+    opacity: 0;
+    transition: all linear .5s; }
     @media only screen and (max-width: 75em) {
       .section-feature .feature__content {
         margin-top: 22rem;
         margin-left: 8rem; } }
     @media only screen and (max-width: 56.25em) {
       .section-feature .feature__content {
-        margin-top: 20rem;
+        margin-top: 18rem;
         margin-left: 8rem; } }
     .section-feature .feature__content h3 {
       margin-bottom: 1rem; }

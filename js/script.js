@@ -1,3 +1,17 @@
+///////////// Feature Animation
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop() >600 && $(window).width() >= 900){
+           $('.feature__box').css({"transform": "translateX(0)", "opacity": "1"});
+            $('.feature__content').css({"transform": "translateX(0)", "opacity": "1"});
+        }else if($(this).scrollTop() >400 && $(window).width() < 900){
+            $('.feature__box').css({"transform": "translateX(0)", "opacity": "1"});
+            $('.feature__content').css({"transform": "translateX(0)", "opacity": "1"});
+        }
+    });
+});
+
+/////////// Signature Animation
 $(document).ready(function(){
     $(window).scroll(function(){
         if($(this).scrollTop() >1300 && $(window).width() >= 900){

@@ -5,6 +5,10 @@ nav {
         list-style: none;
         display: flex;
         justify-content: space-around;
+        
+         @include respond(tab-port) {
+             justify-content: space-between;
+        }
             
         li {
             position: relative;
@@ -19,6 +23,9 @@ nav {
             //background-image: linear-gradient(-110deg, $col-main 0%, $col-main 40%, transparent 40%);
             transition: color .38s;
             
+            @include respond(tab-port) {
+                font-size: 2.5rem;
+            }
             
             &::before {
                 content: "";
