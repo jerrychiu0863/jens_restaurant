@@ -235,7 +235,8 @@ nav {
         margin-bottom: 4rem; }
       .section-signature .signature__box .signature__card .card__content {
         background-color: white;
-        padding: 2rem 2rem; }
+        padding: 2rem 2rem;
+        height: 13rem; }
         .section-signature .signature__box .signature__card .card__content h4 {
           font-size: 2rem;
           text-transform: uppercase;
